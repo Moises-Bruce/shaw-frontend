@@ -23,9 +23,11 @@ export function Details() {
 
     return (
         <div>
-            <img src={user.avatar_url} />
+            <img src={user.avatar_url} className="w-32 h-32 mt-3 ml-3 border-2 border-orange-600" />
 
-            <h1>{user.name}</h1>
+            <div className="flex">
+                <h1 className="font-bold ml-2">{user.name}</h1> 
+            </div>
             <p>{user.login}</p>
             <p>{user.bio}</p>
             <small>{user.location}</small>

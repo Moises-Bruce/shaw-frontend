@@ -52,9 +52,11 @@ export function List() {
                 ))}
             </div>
 
-            <button className='px-4 py-2 mt-4 rounded bg-green-600 text-white flex items-center' onClick={() => handleMoreFetchUsers()}>
-                MAIS
-            </button>
+            <div className='flex justify-center items-end'>
+                <button className='px-12 py-2 mt-5 rounded bg-orange-700 text-white flex justify-center' onClick={() => handleMoreFetchUsers()}>
+                    MAIS
+                </button>
+            </div>
         </div>
     );
 }
